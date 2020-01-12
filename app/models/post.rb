@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: { in: %w(Fiction Non-Fiction) }
   
   def clickbait
-    if clickbait > total_value
+    if clickbait 
       errors.add(:discount, "can't be greater than total value")
     end
   end
