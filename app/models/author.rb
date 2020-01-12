@@ -1,3 +1,3 @@
 class Author < ActiveRecord::Base
-  validates_each
+  validates :name 
 end
